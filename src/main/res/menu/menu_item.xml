@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.journaldev.collapsingtoolbarlayout.ScrollingActivity">
+
+    <item
+        android:id="@+id/home"
+        app:showAsAction="always"
+        android:title="home"
+        android:icon="@drawable/ic_baseline_account_balance_24">
+    </item>
+</menu>

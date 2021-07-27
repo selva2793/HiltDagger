@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ @category Vplay
+  ~ @copyright Copyright (C) 2018 Contus. All rights reserved.
+  ~ @license http://www.apache.org/licenses/LICENSE-2.0
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/toolbar_divider"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/something_went_wrong"
+        android:textSize="22sp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@id/offline_text"/>
+
+    <ImageView
+        android:id="@+id/offline_text"
+        android:layout_width="220dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/error_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/offline_decription"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:text="@string/something_went_wrong_help_text"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offline_text"
+        app:layout_goneMarginTop="10dp"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/button_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:background="@drawable/res_blue_roundfilled_corner"
+        android:text="Retry"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/offline_decription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/artist_gradient"
+    tools:context=".ui.insert.InsertActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_multiple_users_silhouette"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextshape"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        app:paddingStart="30dp"
+        app:paddingEnd="10dp"
+        android:hint="Name"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewlogo"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:id="@+id/viewlineone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextname"/>
+
+    <EditText
+        android:id="@+id/editTextmobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextshape"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        app:paddingStart="30dp"
+        app:paddingEnd="10dp"
+        android:inputType="phone"
+        android:hint="Mobile Number"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewlineone"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:id="@+id/viewlinetwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextmobile"/>
+
+    <EditText
+        android:id="@+id/editTextemail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextshape"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        app:paddingStart="30dp"
+        app:paddingEnd="10dp"
+        android:inputType="text"
+        android:hint="Email"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewlinetwo"/>
+
+
+    <Button
+        android:id="@+id/button_sign_up"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textAllCaps="false"
+        android:text="Save"
+        android:background="#279BE2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextemail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">huiltdragger</string>
+
+    <string name="something_went_wrong_help_text">We\'re sorry, the page you were looking for
+        isn\'t found here</string>
+    <string name="something_went_wrong">Something went wrong...</string>
+
+    <string name="check_internet_image">Please check your internet connection</string>
+
+
+</resources>
